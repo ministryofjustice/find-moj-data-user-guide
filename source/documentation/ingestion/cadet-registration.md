@@ -1,5 +1,7 @@
 # Adding tables to Find MoJ Data from Create a Derived Table (CaDeT)
 
+[Config of CaDeT models is described in their documentation here](https://user-guidance.analytical-platform.service.justice.gov.uk/tools/create-a-derived-table/models/#where-can-i-define-configs)
+
 - Find MoJ Data is integrated with the Create a Derived Table service (CaDeT).
 - To add a table created in CaDeT to Find MoJ Data, add the tag `dc_display_in_catalog` to that model.
 - To add an owner to a model in Find MoJ Data, add the `dc_owner` metadata item to that model.
@@ -26,5 +28,3 @@ models:
         - bold_daily
         - dc_display_in_catalogue
 ```
-
-[Config of CaDeT models is described in their documentation here](https://user-guidance.analytical-platform.service.justice.gov.uk/tools/create-a-derived-table/models/#where-can-i-define-configs)
