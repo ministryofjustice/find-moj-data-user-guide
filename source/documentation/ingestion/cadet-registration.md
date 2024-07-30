@@ -3,8 +3,10 @@
 [Config of CaDeT models is described in their documentation here](https://user-guidance.analytical-platform.service.justice.gov.uk/tools/create-a-derived-table/models/#where-can-i-define-configs)
 
 - Find MoJ Data is integrated with the Create a Derived Table service (CaDeT).
-- To add a table created in CaDeT to Find MoJ Data, add the tag `dc_display_in_catalog` to that model.
+- DBT models are represented by tables in Find MoJ Data.
+- To add a model created in CaDeT to Find MoJ Data, add the tag `dc_display_in_catalog` to that model.
 - To add an owner to a model in Find MoJ Data, add the `dc_owner` metadata item to that model.
+- Domain and database for a DBT model will be inferred from CaDeT file structure.
 
 For example, in the `dbt_project.yml` file:
 
