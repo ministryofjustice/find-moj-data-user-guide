@@ -1,12 +1,10 @@
 # Adding tables to Find MoJ Data from Create a Derived Table (CaDeT)
 
-[Config of CaDeT models is described in their documentation here](https://user-guidance.analytical-platform.service.justice.gov.uk/tools/create-a-derived-table/models/#where-can-i-define-configs)
-
-- Find MoJ Data is integrated with the Create a Derived Table service (CaDeT).
-- DBT models are represented by tables in Find MoJ Data.
-- To add a model created in CaDeT to Find MoJ Data, add the tag `dc_display_in_catalog` to that model.
-- To add an owner to a model in Find MoJ Data, add the `dc_owner` metadata item to that model. This is the data owner of the data held within the model.
-- Other metadata fields relevant to Find MoJ Data are:
+- Find MoJ Data is integrated with the [Create a Derived Table](https://github.com/moj-analytical-services/create-a-derived-table) service (CaDeT).
+- DBT models created from CaDeT are represented by tables in Find MoJ Data.
+- To add a model created in CaDeT to Find MoJ Data, add the tag `dc_display_in_catalog` to that model. [Config of CaDeT models is described in their documentation here](https://user-guidance.analytical-platform.service.justice.gov.uk/tools/create-a-derived-table/models/#where-can-i-define-configs)
+- To add an owner to a model in Find MoJ Data, add the `dc_owner` metadata item to that model. This represents the data owner of the data held within the model.
+- Other metadata fields which can be added to CaDeT tables to be displayed in Find MoJ Data are:
   - `dc_slack_channel_name`: A slack channel name to contact about the data
   - `dc_slack_channel_url`: A slack channel url to contact about the data
   - `dc_where_to_access_dataset`

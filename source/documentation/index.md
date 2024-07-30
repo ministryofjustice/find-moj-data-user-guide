@@ -1,6 +1,6 @@
 # Overview
 
-Find MoJ Data is the data catalog service for the Ministry of Justice. It enables data discoverability across the suite of data assets used by and owned by the Ministry of Justice by providing an searchable interface of their latest metadata. No row-level data is viewable.
+[Find MoJ Data](https://data-platform-find-moj-data-prod.apps.live.cloud-platform.service.justice.gov.uk/) is the data catalog service for the Ministry of Justice. It enables data discoverability across the suite of data assets used by and owned by the Ministry of Justice by providing an searchable interface of their latest metadata. No row-level data is viewable.
 
 This site provides instructions on how to use and add to the Find MoJ Data service.
 
