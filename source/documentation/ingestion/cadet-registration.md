@@ -5,7 +5,11 @@
 - Find MoJ Data is integrated with the Create a Derived Table service (CaDeT).
 - DBT models are represented by tables in Find MoJ Data.
 - To add a model created in CaDeT to Find MoJ Data, add the tag `dc_display_in_catalog` to that model.
-- To add an owner to a model in Find MoJ Data, add the `dc_owner` metadata item to that model.
+- To add an owner to a model in Find MoJ Data, add the `dc_owner` metadata item to that model. This is the data owner of the data held within the model.
+- Other metadata fields relevant to Find MoJ Data are:
+  - `dc_slack_channel_name`: A slack channel name to contact about the data
+  - `dc_slack_channel_url`: A slack channel url to contact about the data
+  - `dc_where_to_access_dataset`
 - Domain and database for a DBT model will be inferred from CaDeT file structure.
 
 For example, in the `dbt_project.yml` file:
