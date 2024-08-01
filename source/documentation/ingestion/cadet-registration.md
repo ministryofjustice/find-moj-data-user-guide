@@ -1,34 +1,68 @@
-# Adding tables to Find MoJ Data from Create a Derived Table (CaDeT)
+---
+owner_slack: "#data-catalogue"
+title: Configure DBT (Create a Derived Table) to send metadata to the catalogue
+last_reviewed_on: 2024-06-04
+review_in: 3 months
+---
 
-- Find MoJ Data is integrated with the [Create a Derived Table](https://github.com/moj-analytical-services/create-a-derived-table) service (CaDeT).
-- DBT models created from CaDeT are represented by tables in Find MoJ Data.
-- To add a model created in CaDeT to Find MoJ Data, add the tag `dc_display_in_catalogue` to that model. [Config of CaDeT models is described in their documentation here.](https://user-guidance.analytical-platform.service.justice.gov.uk/tools/create-a-derived-table/models/#where-can-i-define-configs)
-- To add an owner to a table in Find MoJ Data, add the `dc_owner` metadata item to the CaDeT model. This represents the data owner of the data held within the model. The owner should correspond to an existing @justice.gov.uk email address. For example, `john.smith@justice.gov.uk` would use `john.smith` as the entry for `dc_owner`.
-- Other metadata fields which can be added to CaDeT models to be displayed in Find MoJ Data are:
-  - `dc_slack_channel_name`: A slack channel name to contact about the data
-  - `dc_slack_channel_url`: A slack channel url to contact about the data
-  - `dc_where_to_access_dataset`
-- Domain and database for a DBT model in Find MoJ Data is inferred from CaDeT file structure.
+# <%= current_page.data.title %>
 
-For example, in the `dbt_project.yml` file:
+The data catalogue uses DBT as a source of metadata about the Analytical Platform.
 
-```
+By default, all models and sources will be ingested into the Datahub catalogue, but they will not be shown in the Find MOJ Data service.
+
+## Make a model or source visible
+
+To make a model or source visible in the Find MOJ Data frontend, set the `dc_display_in_catalogue` tag.
+
+For example, in `dbt_project.yaml` you can include
+
+```yaml
 models:
-  mojap_derived_tables:
-    +materialized: table
-    +group: default
-    +meta:
-      # Metadata to send the Data Catalogue. Can be overriden
-      # per domain/model/source
-      dc_slack_channel_name: "#ask-data-modelling"
-      dc_slack_channel_url: https://moj.enterprise.slack.com/archives/C03J21VFHQ9
-      dc_where_to_access_dataset: AnalyticalPlatform
-    bold:
-      +meta:
-        dc_owner: jane.doe
-      +group: bold
-      bold_rr_pnc_ids:
-      +tags:
-        - bold_daily
-        - dc_display_in_catalogue
+    courts:
+        some_subdirectory:
+            common_platform_derived:
+                +tags:
+                    - dc_display_in_catalogue
 ```
+
+This tag should be used for sources and derived tables that users are expected to work with directly. Don't add it to intermediate/staging tables.
+
+## Set required metadata
+
+When adding new entities to the catalgoue, we require that you specify some additional metadata in DBT. For example:
+
+```yaml
+models:
+    courts:
+        +meta:
+            dc_slack_channel_name: #ask-data-engineering
+            dc_slack_channel_url: https://moj.enterprise.slack.com/archives/C8X3PP1TN
+            dc_owner_id: Joe.Bloggs
+```
+
+This metadata can be set at any level but we recommend setting it at the domain level.
+
+The required fields are as follows:
+
+| field name | description | example |
+| -- | -- | -- |
+| dc_slack_channel_name | The name of a slack channel to be used as a contact point for users of the catalogue service, including the leading '#'. Note: this is not the same as the owner channel for notifications. | `#data-engineering` |
+| dc_slack_channel_url | The URL to the slack channel | `https://moj.enterprise.slack.com/archives/C8X3PP1TN` |
+| dc_owner_id | The Datahub user ID for the [data owner](https://www.gov.uk/government/publications/essential-shared-data-assets-and-data-ownership-in-government/data-ownership-in-government-html#data-owner-2), usually in the form FirstName.LastName. This is the senior individual accountable for the data, *not* a data custodian. This is not the same as the DBT owner. | `Joe.Bloggs` |
+
+## Additional metadata
+
+| field name | description | example |
+| -- | -- | -- |
+| dc_where_to_access_dataset | An enum representing how the data can be accessed by end users. For DBT, this always defaults to AnalyticalPlatform. | AnalyticalPlatform |
+
+## Ensure the data owner has an account in Datahub
+
+The owner's Datahub account must exist before you set the `dc_owner_id`. This will happen automatically the first time they log into Datahub.
+
+The user ID is visible in the URL of a user page in Datahub, e.g.
+
+https://datahub-catalogue-dev.apps.live.cloud-platform.service.justice.gov.uk/user/**urn:li:corpuser:Joe.Bloggs**/owner%20of
+
+Speak to the Data catalogue team if you would like us to manually add a set of users without them logging in.
