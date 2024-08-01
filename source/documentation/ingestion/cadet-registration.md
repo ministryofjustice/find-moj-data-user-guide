@@ -19,11 +19,11 @@ For example, in `dbt_project.yaml` you can include
 
 ```yaml
 models:
-    courts:
-        some_subdirectory:
-            common_platform_derived:
-                +tags:
-                    - dc_display_in_catalogue
+  courts:
+    some_subdirectory:
+      common_platform_derived:
+        +tags:
+          - dc_display_in_catalogue
 ```
 
 This tag should be used for sources and derived tables that users are expected to work with directly. Don't add it to intermediate/staging tables.
@@ -34,27 +34,27 @@ When adding new entities to the catalgoue, we require that you specify some addi
 
 ```yaml
 models:
-    courts:
-        +meta:
-            dc_slack_channel_name: #ask-data-engineering
-            dc_slack_channel_url: https://moj.enterprise.slack.com/archives/C8X3PP1TN
-            dc_owner_id: Joe.Bloggs
+  courts:
+    +meta:
+      dc_slack_channel_name: #ask-data-engineering
+      dc_slack_channel_url: https://moj.enterprise.slack.com/archives/C8X3PP1TN
+      dc_owner_id: Joe.Bloggs
 ```
 
 This metadata can be set at any level but we recommend setting it at the domain level.
 
 The required fields are as follows:
 
-| field name | description | example |
-| -- | -- | -- |
-| dc_slack_channel_name | The name of a slack channel to be used as a contact point for users of the catalogue service, including the leading '#'. Note: this is not the same as the owner channel for notifications. | `#data-engineering` |
-| dc_slack_channel_url | The URL to the slack channel | `https://moj.enterprise.slack.com/archives/C8X3PP1TN` |
-| dc_owner_id | The Datahub user ID for the [data owner](https://www.gov.uk/government/publications/essential-shared-data-assets-and-data-ownership-in-government/data-ownership-in-government-html#data-owner-2), usually in the form FirstName.LastName. This is the senior individual accountable for the data, *not* a data custodian. This is not the same as the DBT owner. | `Joe.Bloggs` |
+| field name            | description                                                                                                                                                                                                                                                                                                                                                       | example                                               |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
+| dc_slack_channel_name | The name of a slack channel to be used as a contact point for users of the catalogue service, including the leading '#'. Note: this is not the same as the owner channel for notifications.                                                                                                                                                                       | `#data-engineering`                                   |
+| dc_slack_channel_url  | The URL to the slack channel                                                                                                                                                                                                                                                                                                                                      | `https://moj.enterprise.slack.com/archives/C8X3PP1TN` |
+| dc_owner_id           | The Datahub user ID for the [data owner](https://www.gov.uk/government/publications/essential-shared-data-assets-and-data-ownership-in-government/data-ownership-in-government-html#data-owner-2), usually in the form FirstName.LastName. This is the senior individual accountable for the data, _not_ a data custodian. This is not the same as the DBT owner. | `Joe.Bloggs`                                          |
 
 ## Additional metadata
 
-| field name | description | example |
-| -- | -- | -- |
+| field name                 | description                                                                                                          | example            |
+| -------------------------- | -------------------------------------------------------------------------------------------------------------------- | ------------------ |
 | dc_where_to_access_dataset | An enum representing how the data can be accessed by end users. For DBT, this always defaults to AnalyticalPlatform. | AnalyticalPlatform |
 
 ## Ensure the data owner has an account in Datahub
