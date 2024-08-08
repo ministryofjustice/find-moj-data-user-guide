@@ -5,7 +5,7 @@ host: https://ministryofjustice.github.io/find-moj-data-user-guide
 
 # Header-related options
 show_govuk_logo: false
-service_name: Find MoJ data
+service_name: Find MoJ data user guide
 service_link: /
 
 # Links to show on right-hand-side of header
