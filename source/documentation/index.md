@@ -1,16 +1,16 @@
 # Overview
 
-[Find MoJ Data](https://data-platform-find-moj-data-prod.apps.live.cloud-platform.service.justice.gov.uk/) is the data catalogue service for the Ministry of Justice. It enables data discoverability across the suite of data assets used by and owned by the Ministry of Justice by providing a searchable interface of their latest metadata. No row-level data is viewable.
+[Find MoJ data](https://data-platform-find-moj-data-prod.apps.live.cloud-platform.service.justice.gov.uk/) is the data catalogue service for the Ministry of Justice. The aim is to increase the value of MoJ data by making it easy to find and understand. The catalogue contains metadata - data which describes the data assets - not the data itself.
 
-This site provides instructions on how to use and add to the Find MoJ Data service.
+The service is now in private beta with a limited number of datasets catalogued, currently limited to models from the [Create a Derived Table (CaDeT)](https://github.com/moj-analytical-services/create-a-derived-table) service and charts from [Justice Data](https://data.justice.gov.uk/).
 
 ## Getting started
 
-Users with a @justice.gov.uk email can sign in to [Find MoJ Data](https://data-platform-find-moj-data-prod.apps.live.cloud-platform.service.justice.gov.uk/) with their Microsoft account for read only access.
+All MoJ users can sign in to [Find MoJ data](https://data-platform-find-moj-data-prod.apps.live.cloud-platform.service.justice.gov.uk/) with their @justice.gov.uk Microsoft account.
 
-## Adding to Find MoJ Data
+## Adding to Find MoJ data
 
-- [Create a Derived Table](data/cadet-registration/index.html)
+[How to register a model/table from Create a Derived Table](data/cadet-registration/index.html)
 
 ## Contact Us
 
