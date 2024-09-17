@@ -34,7 +34,7 @@ models:
       dc_owner_id: Joe.Bloggs
 ```
 
-This metadata can be set at any level but we recommend setting it at the domain level.
+This metadata can be set at domain level, so for all tables in that domain, or individually on a per-table level.
 
 The required fields are as follows:
 
@@ -46,9 +46,9 @@ The required fields are as follows:
 
 ## Additional metadata
 
-| field name                 | description                                                                                                          | example            |
-| -------------------------- | -------------------------------------------------------------------------------------------------------------------- | ------------------ |
-| dc_where_to_access_dataset | An enum representing how the data can be accessed by end users. For DBT, this always defaults to AnalyticalPlatform. | AnalyticalPlatform |
+| field name                 | description                                                                                                                                                              | example            |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------ |
+| dc_where_to_access_dataset | An enum representing how the data can be accessed by end users, eg a choice of ["AnalyticalPlatform", "CourtsAPI"]. For DBT, this always defaults to AnalyticalPlatform. | AnalyticalPlatform |
 
 ## Full example `dbt_project.yml` file
 
@@ -81,4 +81,4 @@ The user ID is visible in the URL of a user page in Datahub, e.g.
 
 `https://datahub-catalogue-dev.apps.live.cloud-platform.service.justice.gov.uk/user/**urn:li:corpuser:Joe.Bloggs**/owner%20of`
 
-[Speak to Find MoJ data team](index.html#contact-us) if you would like us to manually add a set of users without them logging in.
+[Speak to Find MoJ data team](/index.html#contact-us) if you would like us to manually add a set of users without them logging in.
