@@ -31,7 +31,7 @@ jobs:
         run: |
           /scripts/deploy.sh
       - name: Upload artifact to be published
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: github-pages
           path: artifact.tar
@@ -48,14 +48,14 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
 
   url-check:
     needs: deploy
     runs-on: ubuntu-latest
     steps:
       - name: Download a Build Artifact from build
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: github-pages
           path: github-pages
@@ -65,5 +65,6 @@ jobs:
           tar -xvf artifact.tar
           npm install linkinator
           npx linkinator . --recurse --markdown \
-            --skip https://ministryofjustice.github.io/template-documentation-site/images/govuk-large.png \
+            --skip https://ministryofjustice.github.io/find-moj-data-user-guide/images/govuk-large.png \
+            --skip https://github.com/moj-analytical-services/create-a-derived-table \
           # "URL Check will fail on private and internal GitHub repositories"
