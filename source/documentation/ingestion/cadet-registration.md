@@ -45,7 +45,7 @@ models:
     +meta:
       dc_slack_channel_name: #ask-data-engineering
       dc_slack_channel_url: https://moj.enterprise.slack.com/archives/C8X3PP1TN
-      dc_owner_id: Joe.Bloggs
+      dc_owner: Joe.Bloggs
 ```
 
 For sources, add the additional metadata to `meta` in the properties file:
@@ -59,7 +59,7 @@ sources:
       source_file_last_updated: "..."
       dc_slack_channel_name: #ask-data-engineering
       dc_slack_channel_url: https://moj.enterprise.slack.com/archives/C8X3PP1TN
-      dc_owner_id: Joe.Bloggs
+      dc_owner: Joe.Bloggs
 ```
 
 This metadata can be set at domain level, so for all tables in that domain, or individually on a per-table level.
@@ -70,7 +70,7 @@ The required fields are as follows:
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
 | dc_slack_channel_name | The name of a slack channel to be used as a contact point for users of the catalogue service, including the leading '#'. Note: this is not the same as the owner channel for notifications.                                                                                                                                                                       | `#data-engineering`                                   |
 | dc_slack_channel_url  | The URL to the slack channel                                                                                                                                                                                                                                                                                                                                      | `https://moj.enterprise.slack.com/archives/C8X3PP1TN` |
-| dc_owner_id           | The Datahub user ID for the [data owner](https://www.gov.uk/government/publications/essential-shared-data-assets-and-data-ownership-in-government/data-ownership-in-government-html#data-owner-2), usually in the form FirstName.LastName. This is the senior individual accountable for the data, _not_ a data custodian. This is not the same as the DBT owner. | `Joe.Bloggs`                                          |
+| dc_owner              | The Datahub user ID for the [data owner](https://www.gov.uk/government/publications/essential-shared-data-assets-and-data-ownership-in-government/data-ownership-in-government-html#data-owner-2), usually in the form FirstName.LastName. This is the senior individual accountable for the data, _not_ a data custodian. This is not the same as the DBT owner. | `Joe.Bloggs`                                          |
 
 ## Additional metadata
 
@@ -114,7 +114,7 @@ sources:
       # per domain/model/source
       dc_slack_channel_name: #ask-data-engineering
       dc_slack_channel_url: https://moj.enterprise.slack.com/archives/C8X3PP1TN
-      dc_owner_id: Joe.Bloggs
+      dc_owner: Joe.Bloggs
     name: alpha_vcms_data
     tags:
       - dc_display_in_catalogue
