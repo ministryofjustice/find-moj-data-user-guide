@@ -43,7 +43,7 @@ When adding new entities to the catalgoue, we require that you specify some addi
 models:
   courts:
     +meta:
-      dc_slack_channel_name: #ask-data-engineering
+      dc_slack_channel_name: "#ask-data-engineering"
       dc_slack_channel_url: https://moj.enterprise.slack.com/archives/C8X3PP1TN
       dc_owner: Joe.Bloggs
 ```
@@ -57,7 +57,7 @@ sources:
       location: ""
       number_of_tables: 42
       source_file_last_updated: "..."
-      dc_slack_channel_name: #ask-data-engineering
+      dc_slack_channel_name: "#ask-data-engineering"
       dc_slack_channel_url: https://moj.enterprise.slack.com/archives/C8X3PP1TN
       dc_owner: Joe.Bloggs
 ```
