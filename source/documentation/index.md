@@ -10,7 +10,10 @@ All MoJ users can sign in to [Find MoJ data](https://find-moj-data.service.justi
 
 ## Adding to Find MoJ data
 
-[How to register a model/table from Create a Derived Table](data/cadet-registration/index.html)
+[How to register a model/table from Create a Derived Table](data/cadet-registration/index.html)\
+[How to register database metadata from Create a Derived Table](data/cadet-db-registration/index.html)
+
+somethin
 
 ## Contact us
 
