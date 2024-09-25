@@ -4,9 +4,9 @@ Find MoJ data uses the [Create a Derived Table](https://github.com/moj-analytica
 
 By default, all models and sources will be ingested into the Datahub catalogue, but they will not be shown in the Find MoJ data service.
 
-## Make a model or source visible
+## Make a model visible
 
-To make a model or source visible in Find MoJ data, set the `dc_display_in_catalogue` tag to that model. [Config of CaDeT models is described in their documentation here.](https://user-guidance.analytical-platform.service.justice.gov.uk/tools/create-a-derived-table/models/#where-can-i-define-configs)
+To make a model visible in Find MoJ data, add the `dc_display_in_catalogue` tag to that model. [Config of CaDeT models is described in their documentation here.](https://user-guidance.analytical-platform.service.justice.gov.uk/tools/create-a-derived-table/models/#where-can-i-define-configs)
 
 For example, in `dbt_project.yml` you can include
 
@@ -19,21 +19,20 @@ models:
           - dc_display_in_catalogue
 ```
 
-For sources, include the tag in the properties file (`models/sources/xyz.yml`) instead:
+This tag should be used for tables that users are expected to work with directly. Don't add it to intermediate/staging tables.
+
+### Generated models
+
+Some models are generated from a template. If you intend to include these generated models
+in the catalogue, set `tags` to `$TAGS_WITH_DISPLAY_IN_CATALOGUE$` in the YAML template. This makes sure that the `dc_display_in_catalogue` tag is set in the resulting file.
+
+For example, `/model_templates/oasys/templates/models/risk/oasys/oasys__{table_name}.yml` contains the following model definition:
 
 ```yaml
-sources:
-  - description: "..."
-    meta:
-      # ...
-    name: "..."
-    tags:
-      - dc_display_in_catalogue
-    tables:
-      # ...
+- name: $MODEL_NAME$
+  config:
+    tags: $TAGS_WITH_DISPLAY_IN_CATALOGUE$
 ```
-
-This tag should be used for sources and derived tables that users are expected to work with directly. Don't add it to intermediate/staging tables.
 
 ## Set required metadata
 
@@ -43,20 +42,6 @@ When adding new entities to the catalgoue, we require that you specify some addi
 models:
   courts:
     +meta:
-      dc_slack_channel_name: "#ask-data-engineering"
-      dc_slack_channel_url: https://moj.enterprise.slack.com/archives/C8X3PP1TN
-      dc_owner: Joe.Bloggs
-```
-
-For sources, add the additional metadata to `meta` in the properties file:
-
-```yaml
-sources:
-  - description: "..."
-    meta:
-      location: ""
-      number_of_tables: 42
-      source_file_last_updated: "..."
       dc_slack_channel_name: "#ask-data-engineering"
       dc_slack_channel_url: https://moj.enterprise.slack.com/archives/C8X3PP1TN
       dc_owner: Joe.Bloggs
@@ -99,25 +84,6 @@ models:
       +tags:
         - bold_daily
         - dc_display_in_catalogue
-```
-
-## Full example properties file
-
-```yaml
-sources:
-  - description: ""
-    meta:
-      location: ""
-      number_of_tables: 62
-      source_file_last_updated: "2024-09-15"
-      # Metadata to send Find MoJ data. Can be overriden
-      # per domain/model/source
-      dc_slack_channel_name: #ask-data-engineering
-      dc_slack_channel_url: https://moj.enterprise.slack.com/archives/C8X3PP1TN
-      dc_owner: Joe.Bloggs
-    name: alpha_vcms_data
-    tags:
-      - dc_display_in_catalogue
 ```
 
 ## Ensure the data owner has an account in Datahub
