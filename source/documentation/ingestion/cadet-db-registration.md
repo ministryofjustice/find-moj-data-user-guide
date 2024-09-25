@@ -1,3 +1,10 @@
+---
+title: Adding Database metadata to Find MoJ data from Create a Derived Table (CaDeT)
+owner_slack: "#data-catalogue"
+last_reviewed_on: 2024-09-25
+review_in: 1 month
+---
+
 # Adding Database metadata to Find MoJ data from Create a Derived Table (CaDeT)
 
 If your model has been tagged with `dc_display_in_catalogue` then by default it will have its parent database created in Find MoJ data, see guidance for [registering a model/table](../../data/cadet-registration/index.html)
