@@ -15,5 +15,6 @@ All MoJ users can sign in to [Find MoJ data](https://find-moj-data.service.justi
 
 ## Contact us
 
-The best way to contact us is via [our Slack channel](https://moj.enterprise.slack.com/archives/C06NPM2200N).
-We are also contactable via [MS Teams](https://teams.microsoft.com/l/channel/19%3Abb91d2a728a54472a41629ee6f2908ea%40thread.tacv2/Ask%20Data%20Catalogue?groupId=f6c3cb3b-591c-4e47-9997-25b6dc9bf5b6&tenantId=c6874728-71e6-41fe-a9e1-2e8c36776ad8)
+The following links open in a new tab.
+
+The best way to contact us is via our <a href="https://moj.enterprise.slack.com/archives/C06NPM2200N" rel="noreferrer noopener" target="_blank">Slack channel<span class="govuk-visually-hidden"> (opens in new tab)</span></a>. We are also contactable via our <a href="https://teams.microsoft.com/l/channel/19%3Abb91d2a728a54472a41629ee6f2908ea%40thread.tacv2/Ask%20Data%20Catalogue?groupId=f6c3cb3b-591c-4e47-9997-25b6dc9bf5b6&tenantId=c6874728-71e6-41fe-a9e1-2e8c36776ad8" rel="noreferrer noopener" target="_blank">MS Teams channel<span class="govuk-visually-hidden"> (opens in new tab)</span></a>.
