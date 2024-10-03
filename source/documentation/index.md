@@ -4,6 +4,16 @@
 
 The service is now in private beta with a limited number of datasets catalogued, currently limited to models from the [Create a Derived Table (CaDeT)](https://github.com/moj-analytical-services/create-a-derived-table) service and charts from [Justice Data](https://data.justice.gov.uk/).
 
+Data modelling and engineering (DMET) curate analysis-ready clones of external databases using Create a Derived Table including:
+* Book A Secure Move
+* Caseman
+* Delius
+* Nomis
+* Oasys
+* Sirius
+* Xhibit
+Create a Derived Table also processes prison apps data and some tables uploaded from the data uploader.
+
 ## Getting started
 
 All MoJ users can sign in to [Find MoJ data](https://find-moj-data.service.justice.gov.uk/) with their @justice.gov.uk Microsoft account.
