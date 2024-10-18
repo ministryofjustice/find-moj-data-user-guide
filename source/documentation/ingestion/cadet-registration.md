@@ -102,3 +102,11 @@ The user ID is visible in the URL of a user page in Datahub, e.g.
 `https://datahub-catalogue-dev.apps.live.cloud-platform.service.justice.gov.uk/user/**urn:li:corpuser:Joe.Bloggs**/owner%20of`
 
 [Speak to Find MoJ data team](/index.html#contact-us) if you would like us to manually add a set of users without them logging in.
+
+## Make a source visible
+
+In CaDeT, dbt sources are made visible by the same process models are.
+
+## Make a seed visible
+
+All dbt seeds are ingested into the catalogue and shown by default.
