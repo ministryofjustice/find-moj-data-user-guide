@@ -105,7 +105,7 @@ The user ID is visible in the URL of a user page in Datahub, e.g.
 
 ## Make a source visible
 
-In CaDeT, dbt sources are made visible by the same process models are.
+In CaDeT, dbt sources are made visible by the same process models are. Data engineering provide preprocessed clones of eg NOMIS ready for analysis, which are created using templated files but are defined as models within the context of dbt and not as sources.
 
 ## Make a seed visible
 
