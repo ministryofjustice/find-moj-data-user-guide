@@ -6,13 +6,13 @@ The service is now in private beta with a limited number of datasets catalogued,
 
 Data modelling and engineering (DMET) curate analysis-ready clones of external databases using Create a Derived Table including:
 
-* Book A Secure Move
-* Caseman
-* Delius
-* Nomis
-* Oasys
-* Sirius
-* Xhibit
+- Book A Secure Move
+- Caseman
+- Delius
+- Nomis
+- Oasys
+- Sirius
+- Xhibit
 
 In addition Create a Derived Table processes some prison apps data and tables uploaded from the data uploader.
 
@@ -24,9 +24,13 @@ Derived data is trusted and consistent across use cases, meaning we get the same
 
 All MoJ users can sign in to [Find MoJ data](https://find-moj-data.service.justice.gov.uk/) with their @justice.gov.uk Microsoft account.
 
+## Glossary
+
+Find MoJ data uses organisational terms. [Our glossary provides clear definitions of key terms and concepts related to data management, analytics, and governance within our catalogue.](data/glossary/index.html)
+
 ## Adding to Find MoJ data
 
-[How to register a model/table from Create a Derived Table](data/cadet-registration/index.html)  
+[How to register a model/table from Create a Derived Table](data/cadet-registration/index.html)
 [How to add database metadata from Create a Derived Table](data/cadet-db-registration/index.html)
 
 ## Contact us
