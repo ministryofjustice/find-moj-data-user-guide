@@ -25,12 +25,12 @@ database_metadata:
   name: example_derived  
   # A description of the database that will aid people to understand what
   # it contains and whether it might be of use
-  description: This is just an example, serves no other purpose  
-  # The owner of the database - This should be the name as it appears
-  # before the @justice.gov.uk
+  description: This is just an example, serves no other purpose
+  # The data custodian (technical owner and subject matter expert)
+  # This should be the name as it appears before the @justice.gov.uk
   # If a functional mailbox or team email it can be given as full email
   # address
-  dc_owner: some.body12  
+  dc_data_custodian: some.body12  
   # Slack channel name for where people should direct any questions they
   # have about the data
   dc_slack_channel_name: "#ask-channel-example"  
