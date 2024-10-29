@@ -1,8 +1,8 @@
 ---
 title: Adding tables to Find MoJ data from Create a Derived Table (CaDeT)
 owner_slack: "#data-catalogue"
-last_reviewed_on: 2024-09-25
-review_in: 1 month
+last_reviewed_on: 2024-10-28
+review_in: 2 months
 ---
 
 # Adding tables to Find MoJ data from Create a Derived Table (CaDeT)
@@ -51,18 +51,18 @@ models:
     +meta:
       dc_slack_channel_name: "#ask-data-engineering"
       dc_slack_channel_url: https://moj.enterprise.slack.com/archives/C8X3PP1TN
-      dc_owner: Joe.Bloggs
+      dc_data_custodian: Joe.Bloggs
 ```
 
 This metadata can be set at domain level, so for all tables in that domain, or individually on a per-table level.
 
 The required fields are as follows:
 
-| field name            | description                                                                                                                                                                                                                                                                                                                                                       | example                                               |
-| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
-| dc_slack_channel_name | The name of a slack channel to be used as a contact point for users of the catalogue service, including the leading '#'. Note: this is not the same as the owner channel for notifications.                                                                                                                                                                       | `#data-engineering`                                   |
-| dc_slack_channel_url  | The URL to the slack channel                                                                                                                                                                                                                                                                                                                                      | `https://moj.enterprise.slack.com/archives/C8X3PP1TN` |
-| dc_owner              | The Datahub user ID for the [data owner](https://www.gov.uk/government/publications/essential-shared-data-assets-and-data-ownership-in-government/data-ownership-in-government-html#data-owner-2), usually in the form FirstName.LastName. This is the senior individual accountable for the data, _not_ a data custodian. This is not the same as the DBT owner. | `Joe.Bloggs`                                          |
+| field name            | description                                                                                                                                                                                                                                                                             | example                                               |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
+| dc_slack_channel_name | The name of a slack channel to be used as a contact point for users of the catalogue service, including the leading '#'. Note: this is not the same as the owner channel for notifications.                                                                                             | `#data-engineering`                                   |
+| dc_slack_channel_url  | The URL to the slack channel                                                                                                                                                                                                                                                            | `https://moj.enterprise.slack.com/archives/C8X3PP1TN` |
+| dc_data_custodian     | The Datahub user ID for the [data custodian](/data/glossary/#glossary:~:text=Data%20governance-,Data%20custodian,-%3A%20Responsible%20for%20the), usually in the form FirstName.LastName. This is a technical contact, _not_ a data owner, information asset owner (IAO), or DBT owner. | `Joe.Bloggs`                                          |
 
 ## Additional metadata
 
@@ -85,7 +85,7 @@ models:
       dc_where_to_access_dataset: AnalyticalPlatform
     bold:
       +meta:
-        dc_owner: jane.doe
+        dc_data_custodian: jane.doe
       +group: bold
       bold_rr_pnc_ids:
       +tags:
@@ -93,9 +93,9 @@ models:
         - dc_display_in_catalogue
 ```
 
-## Ensure the data owner has an account in Datahub
+## Ensure the data custodian has an account in Datahub
 
-The owner's Datahub account must exist before you set the `dc_owner_id`. This will happen automatically the first time they log into Datahub.
+The user's Datahub account must exist before you set the `dc_data_custodian`. This will happen automatically the first time they log into Datahub.
 
 The user ID is visible in the URL of a user page in Datahub, e.g.
 
