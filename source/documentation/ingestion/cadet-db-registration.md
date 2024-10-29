@@ -22,23 +22,23 @@ Add your metadata to the file. The content of that file should be like the examp
 ```yaml
 database_metadata:
   # The name of the database as it appears in prod
-  name: example_derived  
+  name: example_derived
   # A description of the database that will aid people to understand what
   # it contains and whether it might be of use
   description: This is just an example, serves no other purpose
-  # The data custodian (technical owner and subject matter expert)
+  # The data custodian (technical contact)
   # This should be the name as it appears before the @justice.gov.uk
   # If a functional mailbox or team email it can be given as full email
   # address
-  dc_data_custodian: some.body12  
+  dc_data_custodian: some.body12
   # Slack channel name for where people should direct any questions they
   # have about the data
-  dc_slack_channel_name: "#ask-channel-example"  
+  dc_slack_channel_name: "#ask-channel-example"
   # The url for the named channel above
-  dc_slack_channel_url: "https://moj.enterprise.slack.com/archives/12"  
+  dc_slack_channel_url: "https://moj.enterprise.slack.com/archives/12"
   # A readable user friendly name for the database that can be used to
   # display in find-moj-data
-  dc_readable_name: Example derived  
+  dc_readable_name: Example derived
   # A link to where a user of find-moj-data can find information on how to
   # access the data
   dc_access_requirements: "https://example-data-access.gov.uk"
