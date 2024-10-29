@@ -26,12 +26,12 @@ All MoJ users can sign in to [Find MoJ data](https://find-moj-data.service.justi
 
 ## Glossary
 
-Find MoJ data uses organisational terms. [Our glossary](data/glossary/index.html) provides clear definitions of key terms and concepts related to data management, analytics, and governance within our catalogue.
+Find MoJ data uses organisational terms. [Our glossary](glossary) provides clear definitions of key terms and concepts related to data management, analytics, and governance within our catalogue.
 
 ## Adding to Find MoJ data
 
-- [How to register a model/table from Create a Derived Table](data/cadet-registration/index.html)
-- [How to add database metadata from Create a Derived Table](data/cadet-db-registration/index.html)
+- [How to register a model/table from Create a Derived Table](ingestion/cadet-registration/)
+- [How to add database metadata from Create a Derived Table](ingestion/cadet-db-registration/)
 
 ## Contact us
 

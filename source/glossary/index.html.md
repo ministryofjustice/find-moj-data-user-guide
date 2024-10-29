@@ -1,3 +1,11 @@
+---
+title: Glossary
+weight: 20
+last_reviewed_on: 2024-10-24
+review_in: 6 months
+owner_slack: "#data-catalogue"
+---
+
 # Glossary
 
 ## Data governance

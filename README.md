@@ -24,9 +24,7 @@ You can then browse to http://localhost:4567 to view the website.
 You can update the documentation by editing any of the `*.html.md.erb` files in
 the [source](source) directory.
 
-The syntax used in `*.html.md.erb` is Markdown, though it also supports some
-GOV.UK Design System specifics, as listed on [Tech Docs Template - Write your
-content](https://tdt-documentation.london.cloudapps.digital/write_docs/content/).
+The syntax used in `*.html.md` is Markdown, although you can insert arbitrary HTML from the GOV.UK design system.
 
 ## Publishing changes
 
@@ -37,13 +35,5 @@ This website is hosted on [GitHub Pages](https://pages.github.com/).
 
 ## Configuring the website
 
-### Global configuration
-
-The [GOV.UK Tech Docs Template global configuration options](https://tdt-documentation.london.cloudapps.digital/configure_project/global_configuration/)
+The [GOV.UK Tech Docs Template global configuration options](https://github.com/alphagov/tech-docs-template/blob/main/optional/config/tech-docs.yml.tt)
 can be used in this repository to configure the Cloud Platform user guide.
-
-### Structuring documentation and page configuration
-
-The [GOV.UK Tech Docs Template "Configure your documentation project"](https://tdt-documentation.london.cloudapps.digital/configure_project/)
-offers a range of guidance regarding configuration options to help structure
-documentation and configure pages separately.
