@@ -24,9 +24,7 @@ You can then browse to http://localhost:4567 to view the website.
 You can update the documentation by editing any of the `*.html.md.erb` files in
 the [source](source) directory.
 
-The syntax used in `*.html.md.erb` is Markdown, though it also supports some
-GOV.UK Design System specifics, as listed on [Tech Docs Template - Write your
-content](https://tdt-documentation.london.cloudapps.digital/write_docs/content/).
+The syntax used in `*.html.md` is Markdown, although you can insert arbitrary HTML from the GOV.UK design system.
 
 ## Publishing changes
 

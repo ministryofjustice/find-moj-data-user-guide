@@ -7,7 +7,7 @@ review_in: 2 months
 
 # Adding Database metadata to Find MoJ data from Create a Derived Table (CaDeT)
 
-If your model has been tagged with `dc_display_in_catalogue` then by default it will have its parent database created in Find MoJ data, see guidance for [registering a model/table](../../data/cadet-registration/index.html)
+If your model has been tagged with `dc_display_in_catalogue` then by default it will have its parent database created in Find MoJ data, see guidance for [registering a model/table](../../ingestion/cadet-registration/)
 
 However, this database will have no associated metadata available to make it more useful to someone browsing Find MoJ data. But don't worry you can create this metadata and this section will explain how.
 
