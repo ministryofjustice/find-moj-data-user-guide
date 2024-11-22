@@ -5,13 +5,13 @@ host: https://ministryofjustice.github.io/find-moj-data-user-guide
 
 # Header-related options
 show_govuk_logo: false
-service_name: Find MoJ data user guide
-service_link: /
-phase: INTERNAL
+service_name: Find MoJ data
+service_link: https://find-moj-data.service.justice.gov.uk/
+phase: PUBLIC BETA
 
 # Links to show on right-hand-side of header
 header_links:
-  GitHub: https://github.com/ministryofjustice/find-moj-data-user-guide
+  User Guide home: /
 
 # Enables search functionality. This indexes pages only and is not recommended for single-page sites.
 enable_search: true
@@ -19,8 +19,10 @@ enable_search: true
 # Tracking ID from Google Analytics (e.g. UA-XXXX-Y)
 ga_tracking_id:
 
+multipage_nav: true
+
 # Enable collapsible navigation in the sidebar
-collapsible_nav: false
+collapsible_nav: true
 
 # Table of contents depth – how many levels to include in the table of contents.
 # If your ToC is too long, reduce this number and we'll only show higher-level
