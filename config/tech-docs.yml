@@ -5,7 +5,7 @@ host: https://ministryofjustice.github.io/find-moj-data-user-guide
 
 # Header-related options
 show_govuk_logo: false
-service_name: Find MoJ data
+service_name: Find MoJ data (prod)
 service_link: https://find-moj-data.service.justice.gov.uk/
 phase: PUBLIC BETA
 
