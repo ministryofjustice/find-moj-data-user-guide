@@ -99,6 +99,24 @@ Case management system used by Crown Courts only to record case details, hearing
 
 ## Other technical terms
 
+### Audience
+
+**Internal** means the data should not be shared outside the department.
+
+**Published** means that the data is already public.
+
+### Data last updated
+
+Data last updated is the date when the contents of a data asset last changed. This is different to "entry last updated".
+
 ### Derived table
 
 A table created using the [Create a Derived Table service.](https://user-guidance.analytical-platform.service.justice.gov.uk/tools/create-a-derived-table/what-is-create-a-derived-table/)
+
+### Entry last updated
+
+Entry last updated refers to the time the entry in Find MoJ data was last updated, e.g. to update descriptions or other metadata fields.
+
+### Refresh period
+
+The refresh period of a data asset is how often its content is _expected_ to be updated (if at all), e.g. monthly, quarterly etc.
