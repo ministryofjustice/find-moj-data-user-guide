@@ -58,6 +58,10 @@ You can add an entry about your data to Find MoJ data's catalogue yourself if it
 
 If your data is somewhere else, such as Glue, Amazon RDS or an API, [contact us](#contact-us) to discuss. 
 
+## Dataset lineage
+
+For datasets created using CaDeT, table lineage information is displayed using DataHub's interactive graph. Note that glue/athena tables created using airflow and not using CaDeT will not have coverage for lineage.
+
 ##  Contact us
 
 Tell us about your experience, data you’d like to see or any suggestions by using the [Find MoJ data feedback form](https://find-moj-data.service.justice.gov.uk/feedback/). 
