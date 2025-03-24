@@ -35,5 +35,5 @@ jobs:
         id: lychee
         uses: lycheeverse/lychee-action@f81112d0d2814ded911bd23e3beaa9dda9093915 # v2.1.0
         with:
-          args: --verbose --no-progress './**/*.md' './**/*.html' './**/*.erb' --exclude-loopback --accept 401,403,200,429 --exclude '^https://github.com/moj-analytical-services/.*' --fallback-extensions 'md,html.md.erb'
+          args: --verbose --no-progress './**/*.md' './**/*.html' './**/*.erb' --exclude-loopback --accept 401,403,200,429 --fallback-extensions 'md,html.md.erb'
           fail: true
