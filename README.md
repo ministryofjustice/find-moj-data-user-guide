@@ -1,5 +1,5 @@
 # Find MoJ data user guide
-[![Ministry of Justice Repository Compliance Badge](https://github-community.service.justice.gov.uk/repository-standards/api/find-moj-data-runbooks/badge)](https://github-community.service.justice.gov.uk/repository-standards/find-moj-data-runbooks)
+[![Ministry of Justice Repository Compliance Badge](https://github-community.service.justice.gov.uk/repository-standards/api/find-moj-data-user-guide/badge)](https://github-community.service.justice.gov.uk/repository-standards/find-moj-data-user-guide)
 
 This repository holds the website and documentation for the [Find MoJ data
 user guide](https://user-guide.find-moj-data.service.justice.gov.uk/).
