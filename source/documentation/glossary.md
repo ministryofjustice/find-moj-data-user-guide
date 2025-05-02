@@ -4,11 +4,11 @@
 
 ### Data custodian
 
-Responsible for the capture, storage, and disposal of data as per the Data owner and Data steward's requirements, and within the limits of data quality and security limitations.
+Responsible for the capture, storage, and disposal of data as per the data owner and data steward's requirements, and within the limits of data quality and security limitations.
 
 ### Data owner
 
-Senior leader within the business (DD and above) who sponsors and champions data governance work within their data domain.
+Senior leader within the business (deputy director and above) who sponsors and champions data governance work within their data domain.
 
 ### Data steward
 
@@ -27,17 +27,17 @@ Information asset owner. Manages the risks to personal information and business 
 ### Retention period
 
 'Retention period' refers to the period of time for which the data is held in the source system or service.
-The official MoJ overview on Retention- and Disposition schedules can be found here: https://www.gov.uk/government/publications/record-retention-and-disposition-schedules
+The official MoJ overview on Retention- and Disposition schedules [can be found here](https://www.gov.uk/government/publications/record-retention-and-disposition-schedules).
 
 ### Security classification
 
-Only data that is 'official' (including official-sensitive) is presented in the catalogue.
+Only data that is classified as 'OFFICIAL' (including OFFICIAL-SENSITIVE), or published (publicly available) is presented in the catalogue.
 
 ## Data sources
 
-### Analytical platform
+### Analytical Platform
 
-The Analytical Platform (AP) is a data analysis platform made up of tools, packages and datasets for creating applications that utilise data within the Ministry of Justice (MoJ). The Analytical Platform provides development environments in both Python (JupyterLab) and R (RStudio), allowing you to query, analyse and model data.
+The Analytical Platform (AP) is a data analysis platform made up of tools, packages and datasets for creating applications that utilise data within the Ministry of Justice. The Analytical Platform provides development environments in both Python (JupyterLab) and R (RStudio), allowing you to query, analyse and model data.
 
 ### Common platform
 
@@ -47,7 +47,7 @@ Due to replace existing systems XHIBIT and Libra.
 
 ### Delius
 
-Also known as nDelius. Probation case management system.
+Also known as nDelius ("national Delius"). Probation case management system.
 
 ### DPS
 
@@ -65,7 +65,7 @@ Fully managed service to the magistrates’ courts in England and Wales supporti
 
 ### NOMIS
 
-National Offender Management Information System. Also known as C-NOMIS or P-NOMIS.
+National Offender Management Information System. Also known as prison-NOMIS or P-NOMIS.
 
 Operational database used in prisons for the management of offenders. It contains offenders' personal details, age group, type of offence(s), type of custody (including those remanded on bail and sentenced), sentence length, prisoner movement data (internal and external), case note information, addresses of the prisoner (release, reception and curfew) and involvement in breaches of prison discipline. It also includes full details of the prisoners’ visits history, activities (both paid/unpaid work and offender rehabilitation programmes) and details of the prisoners’ financial records whilst in prison.
 
@@ -75,11 +75,13 @@ Offender Assessment System.
 
 Operational database used to assess the risks and needs of eligible offenders in prisons and probation trusts.
 
+Planned to be replaced by the Assessment of Risks, Needs and Strengths (ARNS) system.
+
 ### PECS
 
 Prisoner Escort Custody Services.
 
-The provision of prisoner journeys and transfers between prisons, the case and supervision of prisoners in custody in court cell suites and the custody of prisoners in court docks.
+The contracted-out provision of prisoner journeys and transfers between prisons, the case and supervision of prisoners in custody in court cell suites and the custody of prisoners in court docks.
 
 ### Sirius
 
