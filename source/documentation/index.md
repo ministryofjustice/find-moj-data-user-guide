@@ -27,9 +27,11 @@ You can see other information about a data asset, including:
 * security classification 
 * how regularly the data owner intends to update the data
 
+<img src="/images/example-table-entity.jpg" alt="A screenshot illustrating a data asset example showcasing format type, table descriptions, field descriptions, database descriptions, table schemas, security classification, and how regularly the data owner intends to update the data" width="400" height="250">
+
 ## How Find MoJ data works
 
-<img src="/images/how-find-moj-data-works.svg" alt="A flowchart illustrating the steps in the Find MoJ Data process, starting with data owners providing datasets and ending with Find MoJ Data users accessing the information" width="400" height="250">
+<img src="/images/fmd-process-schematic.jpg" alt="A flowchart illustrating the steps in the Find MoJ Data process, starting with data owners providing datasets and ending with Find MoJ Data users accessing the information" width="400" height="250">
 
 1. Data owners store and maintain their datasets on the Analytical Platform (AP) and other sources.
 1. Find MoJ data ingests the metadata of datasets from the AP and other sources every day. 
