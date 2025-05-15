@@ -43,7 +43,7 @@ You can see other information about a data asset, including:
 
 ## MoJ data sources
 
-The MoJ owns a large number of data sources which are stored and maintained differently, making the data landscape complex and difficult to join up. While the service is in private beta, the catalogue includes a limited range of datasets. 
+The MoJ owns a large number of data sources which are stored and maintained differently, making the data landscape complex and difficult to join up. While the service is in public beta, the catalogue includes a limited range of datasets. 
 
 Find MoJ data includes information about the following:
 
