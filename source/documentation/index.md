@@ -1,4 +1,4 @@
-# Find MoJ data 
+# Find MoJ Data 
 
 Find MoJ data is a searchable catalogue service to help users find and understand data, supporting the [Ministry of Justice's 2025 data strategy](https://www.gov.uk/government/publications/ministry-of-justice-digital-strategy-2025). 
 You can [read an update on the MoJ’s data strategy](https://mojdigital.blog.gov.uk/2023/12/19/mojs-data-strategy-one-year-on/) to learn more about Find MoJ data’s role in improving the department’s approach to data.
@@ -13,18 +13,17 @@ You can use Find MoJ Data to:
 
 ##  Using Find MoJ Data for your work
 
-Anyone with an @justice.gov.uk (Microsoft) account can sign in to Find MoJ data and start using it. Use the service’s search bar to discover datasets through keywords, or select a category to see all datasets in one area. You can filter results to focus on relevant datasets.  
+Anyone with an @justice.gov.uk (Microsoft) account can sign in to Find MoJ Data and start using it. Use the service’s search bar to discover datasets through keywords, or select a category to see all datasets in one area. You can filter results to focus on relevant datasets.  
 
-Each entry lists metadata to describe the data asset, so you can understand its scope and the type of information it contains. For example, Find MoJ data can show you database descriptions for versions of NOMIS (`nomis_dbt` or `nomis_sensitive`).
+Each entry lists metadata to describe the data asset, so you can understand its scope and the type of information it contains. For example, Find MoJ Data can show you database descriptions for versions of NOMIS (`nomis_dbt` or `nomis_sensitive`).
 
 You can see other information about a data asset, including:
 
-* format type	
 * table descriptions
 * field descriptions
 * database descriptions
-* table schemas	
-* security classification 
+* table schemas
+* security classification
 * how regularly the data owner intends to update the data
 
 <img src="/images/example-table-entity.jpg" alt="A screenshot illustrating a data asset example showcasing format type, table descriptions, field descriptions, database descriptions, table schemas, security classification, and how regularly the data owner intends to update the data" width="400" height="250">
@@ -53,7 +52,7 @@ Find MoJ Data includes information about the following:
 * models from the [Create a Derived Table (CaDeT) service](https://github.com/moj-analytical-services/create-a-derived-table)
 * AWS Glue databases, including from legacy pipelines
 
-## Adding datasets to Find MoJ data's catalogue
+## Adding datasets to Find MoJ Data's catalogue
 
 You can add an entry about your data to Find MoJ Data's catalogue yourself if it's derived using the Analytical Platform's Create a Derived Table (CaDeT) service. Follow guidance on [Adding metadata from Create a Derived Table to Find MoJ Data](./cadet-registration.md).
 
