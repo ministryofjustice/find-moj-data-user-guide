@@ -1,4 +1,4 @@
-# Find MoJ Data 
+# Find MoJ Data
 
 Find MoJ data is a searchable catalogue service to help users find and understand data, supporting the [Ministry of Justice's 2025 data strategy](https://www.gov.uk/government/publications/ministry-of-justice-digital-strategy-2025). 
 You can [read an update on the MoJ’s data strategy](https://mojdigital.blog.gov.uk/2023/12/19/mojs-data-strategy-one-year-on/) to learn more about Find MoJ data’s role in improving the department’s approach to data.
@@ -8,10 +8,10 @@ Find MoJ Data unites many different MoJ sources in one place, describing dataset
 You can use Find MoJ Data to:
 
 * discover datasets from [MoJ data sources](#moj-data-sources)
-* evaluate datasets for relevance without needing access to the data they contain 
+* evaluate datasets for relevance without needing access to the data they contain
 * locate data owners, so you can request access or report a problem
 
-##  Using Find MoJ Data for your work
+## Using Find MoJ Data for your work
 
 Anyone with an @justice.gov.uk (Microsoft) account can sign in to Find MoJ Data and start using it. Use the service’s search bar to discover datasets through keywords, or select a category to see all datasets in one area. You can filter results to focus on relevant datasets.  
 
@@ -33,11 +33,11 @@ You can see other information about a data asset, including:
 <img src="/images/fmd-process-schematic.jpg" alt="A flowchart illustrating the steps in the Find MoJ Data process, starting with data owners providing datasets and ending with Find MoJ Data users accessing the information" width="400" height="250">
 
 1. Data owners store and maintain their datasets on the Analytical Platform (AP) and other sources.
-1. Find MoJ Data ingests the metadata of datasets from the AP and other sources every day. 
-1. Find MoJ Data adds the ingested metadata to DataHub so it can be accessed from the DataHub API. 
+1. Find MoJ Data ingests the metadata of datasets from the AP and other sources every day.
+1. Find MoJ Data adds the ingested metadata to DataHub so it can be accessed from the DataHub API.
 1. Information about ingested datasets is displayed in Find MoJ Data’s user interface.
-1. Users can find and evaluate dataset entries on Find MoJ Data. 
-1. Users can contact data owners to request access or report a problem. 
+1. Users can find and evaluate dataset entries on Find MoJ Data.
+1. Users can contact data owners to request access or report a problem.
 
 ## MoJ data sources
 
@@ -58,7 +58,7 @@ You can add an entry about your data to Find MoJ Data's catalogue yourself if it
 
 If your data is somewhere else, such as Glue, Amazon RDS or an API, [contact us](#contact-us) to discuss.
 
-##  Contact us
+## Contact us
 
 Tell us about your experience, data you’d like to see or any suggestions by using the [Find MoJ Data feedback form](https://find-moj-data.service.justice.gov.uk/feedback/).
 
