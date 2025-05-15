@@ -1,6 +1,6 @@
-# Adding metadata from Create a Derived Table to Find MoJ data
+# Adding metadata from Create a Derived Table to Find MoJ Data
 
-Find MoJ data uses the [Create a Derived Table](https://github.com/moj-analytical-services/create-a-derived-table) service (CaDeT) as a source of metadata about the Analytical Platform. CaDeT uses a python package called [dbt](https://www.getdbt.com/product/what-is-dbt).
+Find MoJ Data uses the [Create a Derived Table](https://github.com/moj-analytical-services/create-a-derived-table) service (CaDeT) as a source of metadata about the Analytical Platform. CaDeT uses a python package called [dbt](https://www.getdbt.com/product/what-is-dbt).
 
 By default, all models and sources will be ingested into the DataHub catalogue, but they will **not** be shown in the Find MoJ Data service.
 
@@ -53,9 +53,9 @@ The required fields are as follows:
 
 | field name            | description                                                                                                                                                                                                                                                                             | example                                               |
 | --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
-| dc_slack_channel_name | The name of a slack channel to be used as a contact point for users of the catalogue service, including the leading '#'. Note: this is not the same as the owner channel for notifications.                                                                                             | `#data-engineering`                                   |
+| dc_slack_channel_name | The name of a Slack channel to be used as a contact point for users of the catalogue service, including the leading '#'. Note: this is not the same as the owner channel for notifications.                                                                                             | `#data-engineering`                                   |
 | dc_slack_channel_url  | The URL to the slack channel                                                                                                                                                                                                                                                            | `https://moj.enterprise.slack.com/archives/C8X3PP1TN` |
-| dc_data_custodian     | The Datahub user ID for the [data custodian](/data/glossary/#glossary:~:text=Data%20governance-,Data%20custodian,-%3A%20Responsible%20for%20the), usually in the form FirstName.LastName. This is a technical contact, _not_ a data owner, information asset owner (IAO), or DBT owner. | `Joe.Bloggs`                                          |
+| dc_data_custodian     | The DataHub user ID for the [data custodian](/data/glossary/#glossary:~:text=Data%20governance-,Data%20custodian,-%3A%20Responsible%20for%20the), usually in the form FirstName.LastName. This is a technical contact, _not_ a data owner, information asset owner (IAO), or DBT owner. | `Joe.Bloggs`                                          |
 
 ### Additional metadata
 
@@ -81,7 +81,7 @@ models:
     +materialized: table
     +group: default
     +meta:
-      # Metadata to send Find MoJ data. Can be overriden
+      # Metadata to send Find MoJ Data. Can be overriden
       # per domain/model/source
       dc_slack_channel_name: "#ask-data-modelling"
       dc_slack_channel_url: https://moj.enterprise.slack.com/archives/C03J21VFHQ9
