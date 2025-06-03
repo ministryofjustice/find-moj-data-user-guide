@@ -54,7 +54,7 @@ Find MoJ Data includes information about the following:
 
 ## Adding datasets to Find MoJ Data's catalogue
 
-You can add an entry about your data to Find MoJ Data's catalogue yourself if it's derived using the Analytical Platform's Create a Derived Table (CaDeT) service. Follow guidance on [Adding metadata from Create a Derived Table to Find MoJ Data](./cadet-registration.md).
+You can add an entry about your data to Find MoJ Data's catalogue yourself if it's derived using the Analytical Platform's Create a Derived Table (CaDeT) service. Follow guidance on [Adding metadata from Create a Derived Table to Find MoJ Data](./cadet-registration.html).
 
 If your data is somewhere else, such as Glue, Amazon RDS or an API, [contact us](#contact-us) to discuss.
 
