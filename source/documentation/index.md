@@ -30,7 +30,7 @@ You can see other information about a data asset, including:
 
 ## How Find MoJ Data works
 
-<img src="/images/fmd-process-schematic.jpg" alt="A flowchart illustrating the steps in the Find MoJ Data process, starting with data owners providing datasets and ending with Find MoJ Data users accessing the information" width="400" height="250">
+<img src="/images/fmd-process-schematic.svg" alt="A flowchart illustrating the steps in the Find MoJ Data process, starting with data owners providing datasets and ending with Find MoJ Data users accessing the information" width="400" height="250">
 
 1. Data owners store and maintain their datasets on the Analytical Platform (AP) and other sources.
 1. Find MoJ Data ingests the metadata of datasets from the AP and other sources every day.
